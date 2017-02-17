@@ -1,0 +1,5 @@
+E:\MyTestDemo\TaskProcess\MS.TaskProcess.BLL\bin\Debug\MS.TaskProcess.BLL.dll
+E:\MyTestDemo\TaskProcess\MS.TaskProcess.BLL\bin\Debug\MS.TaskProcess.BLL.pdb
+E:\MyTestDemo\TaskProcess\MS.TaskProcess.BLL\obj\Debug\MS.TaskProcess.BLL.csprojResolveAssemblyReference.cache
+E:\MyTestDemo\TaskProcess\MS.TaskProcess.BLL\obj\Debug\MS.TaskProcess.BLL.dll
+E:\MyTestDemo\TaskProcess\MS.TaskProcess.BLL\obj\Debug\MS.TaskProcess.BLL.pdb

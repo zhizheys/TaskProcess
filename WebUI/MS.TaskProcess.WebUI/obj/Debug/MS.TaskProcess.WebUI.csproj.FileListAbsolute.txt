@@ -37,3 +37,4 @@ E:\MyTestDemo\TaskProcess\WebUI\MS.TaskProcess.WebUI\bin\Antlr3.Runtime.pdb
 E:\MyTestDemo\TaskProcess\WebUI\MS.TaskProcess.WebUI\bin\Newtonsoft.Json.xml
 E:\MyTestDemo\TaskProcess\WebUI\MS.TaskProcess.WebUI\obj\Debug\MS.TaskProcess.WebUI.dll
 E:\MyTestDemo\TaskProcess\WebUI\MS.TaskProcess.WebUI\obj\Debug\MS.TaskProcess.WebUI.pdb
+E:\MyTestDemo\TaskProcess\WebUI\MS.TaskProcess.WebUI\obj\Debug\MS.TaskProcess.WebUI.csprojResolveAssemblyReference.cache

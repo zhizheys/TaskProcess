@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MS.TaskProcess.TaskService.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MS.TaskProcess.Model", "MS.TaskProcess.Model\MS.TaskProcess.Model.csproj", "{09E258D6-801E-49A9-A331-55BBDA4E3893}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MS.TaskProcess.BLL", "MS.TaskProcess.BLL\MS.TaskProcess.BLL.csproj", "{37BD183E-E5B5-4FCA-87B5-BEE154A35D76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MS.TaskProcess.DAL", "MS.TaskProcess.DAL\MS.TaskProcess.DAL.csproj", "{1FF38889-8C5C-4C1E-9AB1-99C312FEA2AA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +47,14 @@ Global
 		{09E258D6-801E-49A9-A331-55BBDA4E3893}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09E258D6-801E-49A9-A331-55BBDA4E3893}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09E258D6-801E-49A9-A331-55BBDA4E3893}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37BD183E-E5B5-4FCA-87B5-BEE154A35D76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37BD183E-E5B5-4FCA-87B5-BEE154A35D76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37BD183E-E5B5-4FCA-87B5-BEE154A35D76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37BD183E-E5B5-4FCA-87B5-BEE154A35D76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FF38889-8C5C-4C1E-9AB1-99C312FEA2AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FF38889-8C5C-4C1E-9AB1-99C312FEA2AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FF38889-8C5C-4C1E-9AB1-99C312FEA2AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FF38889-8C5C-4C1E-9AB1-99C312FEA2AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
