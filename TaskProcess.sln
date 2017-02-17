@@ -9,6 +9,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MS.Common", "MS.Common\MS.C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskProcess.MS.Model", "TaskProcess.MS.Model\TaskProcess.MS.Model.csproj", "{DEF5C74C-5464-4198-8746-D8588CD091DB}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TaskService", "TaskService", "{4350D472-0CFC-4340-A70E-A6189838F3C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskProcess.MS.TaskService", "TaskService\TaskProcess.MS.TaskService\TaskProcess.MS.TaskService.csproj", "{7E679D2B-35B5-43B1-9C16-D0D359254947}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskProcess.MS.TaskService.Jobs", "TaskService\TaskProcess.MS.TaskService.Jobs\TaskProcess.MS.TaskService.Jobs.csproj", "{67C495D5-7F5C-4BF5-AB55-2051E399A77D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,8 +33,20 @@ Global
 		{DEF5C74C-5464-4198-8746-D8588CD091DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DEF5C74C-5464-4198-8746-D8588CD091DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DEF5C74C-5464-4198-8746-D8588CD091DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E679D2B-35B5-43B1-9C16-D0D359254947}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E679D2B-35B5-43B1-9C16-D0D359254947}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E679D2B-35B5-43B1-9C16-D0D359254947}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E679D2B-35B5-43B1-9C16-D0D359254947}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67C495D5-7F5C-4BF5-AB55-2051E399A77D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67C495D5-7F5C-4BF5-AB55-2051E399A77D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67C495D5-7F5C-4BF5-AB55-2051E399A77D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67C495D5-7F5C-4BF5-AB55-2051E399A77D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7E679D2B-35B5-43B1-9C16-D0D359254947} = {4350D472-0CFC-4340-A70E-A6189838F3C4}
+		{67C495D5-7F5C-4BF5-AB55-2051E399A77D} = {4350D472-0CFC-4340-A70E-A6189838F3C4}
 	EndGlobalSection
 EndGlobal
