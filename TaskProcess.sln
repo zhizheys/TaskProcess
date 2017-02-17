@@ -3,17 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskProcess.MS.UI", "TaskProcess.MS.UI\TaskProcess.MS.UI.csproj", "{EA36ADD9-3FB9-4E52-A833-D7CF95B2F6DF}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MS.Common", "MS.Common\MS.Common.csproj", "{3FA409BA-4B37-4111-B8BC-A6DBC63EB607}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskProcess.MS.Model", "TaskProcess.MS.Model\TaskProcess.MS.Model.csproj", "{DEF5C74C-5464-4198-8746-D8588CD091DB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TaskService", "TaskService", "{4350D472-0CFC-4340-A70E-A6189838F3C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskProcess.MS.TaskService", "TaskService\TaskProcess.MS.TaskService\TaskProcess.MS.TaskService.csproj", "{7E679D2B-35B5-43B1-9C16-D0D359254947}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebUI", "WebUI", "{EAA2A3E8-6D00-4B67-A71D-A332399FB1C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskProcess.MS.TaskService.Jobs", "TaskService\TaskProcess.MS.TaskService.Jobs\TaskProcess.MS.TaskService.Jobs.csproj", "{67C495D5-7F5C-4BF5-AB55-2051E399A77D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MS.TaskProcess.WebUI", "WebUI\MS.TaskProcess.WebUI\MS.TaskProcess.WebUI.csproj", "{2BD0B243-C7B4-438B-9F60-CFDECB19F18C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MS.TaskProcess.TaskService", "TaskService\MS.TaskProcess.TaskService\MS.TaskProcess.TaskService.csproj", "{DF467ED2-222F-468D-9AF0-C4E59F574B83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MS.TaskProcess.TaskService.Jobs", "TaskService\MS.TaskProcess.TaskService.Jobs\MS.TaskProcess.TaskService.Jobs.csproj", "{093444BF-2AB3-4D83-BC8F-DE8D5847372F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MS.TaskProcess.Model", "MS.TaskProcess.Model\MS.TaskProcess.Model.csproj", "{09E258D6-801E-49A9-A331-55BBDA4E3893}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,32 +23,33 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{EA36ADD9-3FB9-4E52-A833-D7CF95B2F6DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EA36ADD9-3FB9-4E52-A833-D7CF95B2F6DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EA36ADD9-3FB9-4E52-A833-D7CF95B2F6DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EA36ADD9-3FB9-4E52-A833-D7CF95B2F6DF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3FA409BA-4B37-4111-B8BC-A6DBC63EB607}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3FA409BA-4B37-4111-B8BC-A6DBC63EB607}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3FA409BA-4B37-4111-B8BC-A6DBC63EB607}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3FA409BA-4B37-4111-B8BC-A6DBC63EB607}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DEF5C74C-5464-4198-8746-D8588CD091DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DEF5C74C-5464-4198-8746-D8588CD091DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DEF5C74C-5464-4198-8746-D8588CD091DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DEF5C74C-5464-4198-8746-D8588CD091DB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7E679D2B-35B5-43B1-9C16-D0D359254947}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7E679D2B-35B5-43B1-9C16-D0D359254947}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7E679D2B-35B5-43B1-9C16-D0D359254947}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7E679D2B-35B5-43B1-9C16-D0D359254947}.Release|Any CPU.Build.0 = Release|Any CPU
-		{67C495D5-7F5C-4BF5-AB55-2051E399A77D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{67C495D5-7F5C-4BF5-AB55-2051E399A77D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{67C495D5-7F5C-4BF5-AB55-2051E399A77D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{67C495D5-7F5C-4BF5-AB55-2051E399A77D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BD0B243-C7B4-438B-9F60-CFDECB19F18C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BD0B243-C7B4-438B-9F60-CFDECB19F18C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BD0B243-C7B4-438B-9F60-CFDECB19F18C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BD0B243-C7B4-438B-9F60-CFDECB19F18C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF467ED2-222F-468D-9AF0-C4E59F574B83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF467ED2-222F-468D-9AF0-C4E59F574B83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF467ED2-222F-468D-9AF0-C4E59F574B83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF467ED2-222F-468D-9AF0-C4E59F574B83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{093444BF-2AB3-4D83-BC8F-DE8D5847372F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{093444BF-2AB3-4D83-BC8F-DE8D5847372F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{093444BF-2AB3-4D83-BC8F-DE8D5847372F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{093444BF-2AB3-4D83-BC8F-DE8D5847372F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09E258D6-801E-49A9-A331-55BBDA4E3893}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09E258D6-801E-49A9-A331-55BBDA4E3893}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09E258D6-801E-49A9-A331-55BBDA4E3893}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09E258D6-801E-49A9-A331-55BBDA4E3893}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{7E679D2B-35B5-43B1-9C16-D0D359254947} = {4350D472-0CFC-4340-A70E-A6189838F3C4}
-		{67C495D5-7F5C-4BF5-AB55-2051E399A77D} = {4350D472-0CFC-4340-A70E-A6189838F3C4}
+		{2BD0B243-C7B4-438B-9F60-CFDECB19F18C} = {EAA2A3E8-6D00-4B67-A71D-A332399FB1C0}
+		{DF467ED2-222F-468D-9AF0-C4E59F574B83} = {4350D472-0CFC-4340-A70E-A6189838F3C4}
+		{093444BF-2AB3-4D83-BC8F-DE8D5847372F} = {4350D472-0CFC-4340-A70E-A6189838F3C4}
 	EndGlobalSection
 EndGlobal

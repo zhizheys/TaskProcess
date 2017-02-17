@@ -128,9 +128,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TaskProcess.MS.Model\TaskProcess.MS.Model.csproj">
-      <Project>{def5c74c-5464-4198-8746-d8588cd091db}</Project>
-      <Name>TaskProcess.MS.Model</Name>
+    <ProjectReference Include="..\MS.TaskProcess.Model\MS.TaskProcess.Model.csproj">
+      <Project>{09e258d6-801e-49a9-a331-55bbda4e3893}</Project>
+      <Name>MS.TaskProcess.Model</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

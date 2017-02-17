@@ -7,7 +7,7 @@ namespace MS.Common.ExcelHelper
     using System.IO;
     using NPOI.XSSF.UserModel;
     using NPOI.SS.UserModel;
-    using TaskProcess.MS.Model;
+    using MS.TaskProcess.Model;
 
     public class NpoiExcelHelper : IExcelHelper
     {

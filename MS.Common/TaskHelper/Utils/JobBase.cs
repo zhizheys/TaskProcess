@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Quartz;
 using MS.Common;
-using TaskProcess.MS.Model;
+using MS.TaskProcess.Model;
 
 namespace MS.Common.TaskHelper
 {

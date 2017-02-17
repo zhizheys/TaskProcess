@@ -5,7 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Xml;
-using TaskProcess.MS.Model;
+using MS.TaskProcess.Model;
 using MS.Common;
 using MS.Common.ConfigHelper;
 using MS.Common.DBHelper;

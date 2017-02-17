@@ -10,7 +10,7 @@ using Quartz.Spi;
 using Quartz.Impl.Matchers;
 using MS.Common.LogHelper;
 using MS.Common.ConfigHelper;
-using TaskProcess.MS.Model;
+using MS.TaskProcess.Model;
 
 namespace MS.Common.TaskHelper
 {
