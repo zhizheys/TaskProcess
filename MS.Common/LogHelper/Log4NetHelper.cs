@@ -15,7 +15,14 @@ namespace MS.Common.LogHelper
 
         public Log4NetHelper()
         {
-            FileInfo logCfg = new FileInfo(AppDomain.CurrentDomain.BaseDirectory + @"Config\log4net.config");
+            string logConfigPath = AppDomain.CurrentDomain.BaseDirectory + @"Config\log4net.config";
+
+            if (!File.Exists(logConfigPath))
+            {
+                throw new Exception(string.Format("the log4net config file: {0} is not exists, please check ", logConfigPath));
+            }
+
+            FileInfo logCfg = new FileInfo(logConfigPath);
             log4net.Config.XmlConfigurator.ConfigureAndWatch(logCfg);
             Type type = MethodBase.GetCurrentMethod().DeclaringType;
             log = log4net.LogManager.GetLogger(type);

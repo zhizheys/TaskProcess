@@ -61,6 +61,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Config\Config.config" />
+    <None Include="Config\log4net.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\MS.Common\MS.Common.csproj">
@@ -75,6 +77,9 @@
       <Project>{093444bf-2ab3-4d83-bc8f-de8d5847372f}</Project>
       <Name>MS.TaskProcess.TaskService.Jobs</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\TaskConfig.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

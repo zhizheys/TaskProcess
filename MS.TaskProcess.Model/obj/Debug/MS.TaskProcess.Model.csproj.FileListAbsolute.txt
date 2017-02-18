@@ -1,5 +1,0 @@
-E:\MyTestDemo\TaskProcess\MS.TaskProcess.Model\bin\Debug\MS.TaskProcess.Model.dll
-E:\MyTestDemo\TaskProcess\MS.TaskProcess.Model\bin\Debug\MS.TaskProcess.Model.pdb
-E:\MyTestDemo\TaskProcess\MS.TaskProcess.Model\obj\Debug\MS.TaskProcess.Model.dll
-E:\MyTestDemo\TaskProcess\MS.TaskProcess.Model\obj\Debug\MS.TaskProcess.Model.pdb
-E:\MyTestDemo\TaskProcess\MS.TaskProcess.Model\obj\Debug\MS.TaskProcess.Model.csprojResolveAssemblyReference.cache

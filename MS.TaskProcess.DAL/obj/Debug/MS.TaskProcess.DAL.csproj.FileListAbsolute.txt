@@ -1,5 +1,0 @@
-E:\MyTestDemo\TaskProcess\MS.TaskProcess.DAL\bin\Debug\MS.TaskProcess.DAL.dll
-E:\MyTestDemo\TaskProcess\MS.TaskProcess.DAL\bin\Debug\MS.TaskProcess.DAL.pdb
-E:\MyTestDemo\TaskProcess\MS.TaskProcess.DAL\obj\Debug\MS.TaskProcess.DAL.csprojResolveAssemblyReference.cache
-E:\MyTestDemo\TaskProcess\MS.TaskProcess.DAL\obj\Debug\MS.TaskProcess.DAL.dll
-E:\MyTestDemo\TaskProcess\MS.TaskProcess.DAL\obj\Debug\MS.TaskProcess.DAL.pdb
