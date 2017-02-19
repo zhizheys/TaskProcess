@@ -20,9 +20,9 @@
 
                 //the service run as local system
                 x.RunAsLocalSystem();
-                x.SetDescription("TaskManagerServiceBus Host");
-                x.SetDisplayName("TaskManagerServiceBus");
-                x.SetServiceName("TaskManagerServiceBus");
+                x.SetDescription("22TaskManagerServiceBus Host");
+                x.SetDisplayName("22TaskManagerServiceBus");
+                x.SetServiceName("22TaskManagerServiceBus");
             });
 
         }

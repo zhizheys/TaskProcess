@@ -157,12 +157,10 @@
     <Content Include="Content\Images\close_icon3.png" />
     <Content Include="Content\Images\footer_logo.png" />
     <Content Include="Content\Images\guide_bg.png" />
-    <Content Include="Content\Images\hg.png" />
     <Content Include="Content\Images\jt1.png" />
     <Content Include="Content\Images\jt2.png" />
     <Content Include="Content\Images\jt3.png" />
     <Content Include="Content\Images\jt4.gif" />
-    <Content Include="Content\Images\jygz.png" />
     <Content Include="Content\Images\leftTopBg.png" />
     <Content Include="Content\Images\levelIcon.png" />
     <Content Include="Content\Images\lightbox_close.gif" />
