@@ -90,6 +90,7 @@
     <Compile Include="ConfigHelper\FileHelper.cs" />
     <Compile Include="ConfigHelper\SysConfig.cs" />
     <Compile Include="ConvertHelper.cs" />
+    <Compile Include="DBHelper\DataMapHelper.cs" />
     <Compile Include="DBHelper\DbHelper.cs" />
     <Compile Include="DBHelper\Reflection\DynamicMethodEmit.cs" />
     <Compile Include="DBHelper\Reflection\MethodWrapper.cs" />

@@ -14,8 +14,12 @@
                     s.WhenStarted(tc => tc.Start());
                     s.WhenStopped(tc => tc.Stop());
                 });
-                x.RunAsPrompt();
 
+                //the service run as prompt
+                //x.RunAsPrompt();
+
+                //the service run as local system
+                x.RunAsLocalSystem();
                 x.SetDescription("TaskManagerServiceBus Host");
                 x.SetDisplayName("TaskManagerServiceBus");
                 x.SetServiceName("TaskManagerServiceBus");

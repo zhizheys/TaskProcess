@@ -4,8 +4,8 @@
     <TaskName>测试任务,输出当前时间</TaskName>
     <TaskParam></TaskParam>
     <CronExpressionString>0/10 * * * * ?</CronExpressionString>
-    <AssemblyName>Weiz.TaskManager.TaskSet</AssemblyName>
-    <ClassName>Weiz.TaskManager.TaskSet.TestJob</ClassName>
+    <AssemblyName>MS.TaskProcess.TaskService.Jobs</AssemblyName>
+    <ClassName>MS.TaskProcess.TaskService.Jobs.TestJob</ClassName>
     <Status>1</Status>
     <CreatedTime>2016-01-01 13:00:00</CreatedTime>
     <CronRemark>每10秒运行一次</CronRemark>
@@ -16,8 +16,8 @@
     <TaskName>取消超时订单</TaskName>
     <TaskParam></TaskParam>
     <CronExpressionString>0/20 * * * * ?</CronExpressionString>
-    <AssemblyName>Weiz.TaskManager.TaskSet</AssemblyName>
-    <ClassName>Weiz.TaskManager.TaskSet.OrderCancel</ClassName>
+    <AssemblyName>MS.TaskProcess.TaskService.Jobs</AssemblyName>
+    <ClassName>MS.TaskProcess.TaskService.Jobs.OrderCancel</ClassName>
     <Status>1</Status>
     <CreatedTime>2016-01-01 13:00:00</CreatedTime>
     <CronRemark>每20秒运行一次</CronRemark>
