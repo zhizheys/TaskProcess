@@ -373,8 +373,6 @@
     <Content Include="Content\Scripts\My97DatePicker\开发包\skin\whyGreen\datepicker.css" />
     <Content Include="Content\Scripts\My97DatePicker\开发包\skin\whyGreen\img.gif" />
     <Content Include="cron.html" />
-    <Content Include="demo.html" />
-    <Content Include="demo2.htm" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />

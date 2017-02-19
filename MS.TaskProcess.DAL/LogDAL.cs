@@ -77,7 +77,7 @@ namespace MS.TaskProcess.DAL
         {
             var QUERY_SQL = @"(  select nId,dtDate,sThread,sLevel,sLogger,sMessage,sException,sName
                                  from p_ErrorLog 
-                                 where DateDiff(dd,dtDate,getdate())<=30";
+                                 where DateDiff(dd,dtDate,getdate())<=365";
 
             QUERY_SQL += ") pp ";
             string SQL = string.Format(@" select * from (select ROW_NUMBER() OVER(order by pp.dtDate desc) AS RowNum,* from {0}
@@ -109,7 +109,7 @@ namespace MS.TaskProcess.DAL
             var QUERY_SQL = @"( select r.Id,r.Remark,r.Description,r.CreateTime,t.TaskName,t.ClassName 
 
                                 from p_RunningLog(nolock) r inner join p_task(nolock) t on r.TaskID = t.TaskID 
-                                where DateDiff(dd,r.CreateTime,getdate())<=30";
+                                where DateDiff(dd,r.CreateTime,getdate())<=365";
 
             QUERY_SQL += ") pp ";
             string SQL = string.Format(@" select * from (select ROW_NUMBER() OVER(order by pp.CreateTime desc) AS RowNum,* from {0}

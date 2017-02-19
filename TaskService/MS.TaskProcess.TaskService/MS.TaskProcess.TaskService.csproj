@@ -72,6 +72,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <SubType>Designer</SubType>
     </None>
+    <None Include="Config\quartz.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

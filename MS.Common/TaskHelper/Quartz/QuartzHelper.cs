@@ -152,7 +152,7 @@ namespace MS.Common.TaskHelper
             }
             catch (Exception ex)
             {
-                LogHelper.LogHelper.CreateInstance().Error("初始化远程任务管理器失败" + ex.StackTrace);
+                LogHelper.LogHelper.CreateInstance().Error("初始化远程任务管理器失败",ex);
             }
         }
 
