@@ -31,7 +31,7 @@ namespace MS.TaskProcess.WebUI.Controllers
             {
                 redirectUrl = HttpUtility.UrlEncode(Request.UrlReferrer.PathAndQuery);
             }
-            string loginUrl = FormsAuthentication.LoginUrl;
+            string loginUrl = ConstantData.LOGINURL;
             if (Request.HttpMethod == System.Net.WebRequestMethods.Http.Get && !string.IsNullOrEmpty(redirectUrl))
             {
                 loginUrl += "?ReturnUrl=" + redirectUrl;

@@ -10,7 +10,7 @@ namespace MS.TaskProcess.WebUI.Controllers
 {
     public class BaseController : Controller
     {
-        public static string strLoginUrl = "/Account/Login";
+        //public static string strLoginUrl = "/Account/Login";
 
         //public static string LoginUrl = UrlHelper.GenerateUrl()
 
@@ -54,7 +54,7 @@ namespace MS.TaskProcess.WebUI.Controllers
             if (CurrentUser == null)
             {
                 var returnUrl = filterContext.HttpContext.Request.Url.AbsoluteUri;
-                var res = Redirect(strLoginUrl + "?ReturnUrl=" + returnUrl);
+                var res = Redirect(ConstantData.LOGINURL + "?ReturnUrl=" + returnUrl);
                 filterContext.Result = res;
             }
 
@@ -114,11 +114,11 @@ namespace MS.TaskProcess.WebUI.Controllers
             String loginUrl;
             if (String.IsNullOrEmpty(returnUrl))
             {
-                loginUrl = strLoginUrl;
+                loginUrl = ConstantData.LOGINURL;
             }
             else
             {
-                loginUrl = strLoginUrl + "?ReturnUrl=" + HttpUtility.UrlEncode(returnUrl);
+                loginUrl = ConstantData.LOGINURL + "?ReturnUrl=" + HttpUtility.UrlEncode(returnUrl);
             }
             return loginUrl;
         }
