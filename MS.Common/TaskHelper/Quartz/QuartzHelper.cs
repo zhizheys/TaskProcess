@@ -48,37 +48,37 @@ namespace MS.Common.TaskHelper
                     if (scheduler == null)
                     {
                         #region quartz 实例配置
-                        //NameValueCollection properties = new NameValueCollection();
+                        NameValueCollection properties = new NameValueCollection();
 
-                        //properties["quartz.scheduler.instanceName"] = "ExampleQuartzScheduler";
+                        properties["quartz.scheduler.instanceName"] = "ExampleQuartzScheduler";
 
-                        //properties["quartz.threadPool.type"] = "Quartz.Simpl.SimpleThreadPool, Quartz";
+                        properties["quartz.threadPool.type"] = "Quartz.Simpl.SimpleThreadPool, Quartz";
 
-                        //properties["quartz.threadPool.threadCount"] = "10";
+                        properties["quartz.threadPool.threadCount"] = "10";
 
-                        //properties["quartz.threadPool.threadPriority"] = "Normal";
+                        properties["quartz.threadPool.threadPriority"] = "Normal";
 
-                        //properties["quartz.jobStore.misfireThreshold"] = "60000";
+                        properties["quartz.jobStore.misfireThreshold"] = "60000";
 
-                        //properties["quartz.jobStore.type"] = "Quartz.Simpl.RAMJobStore, Quartz";
+                        properties["quartz.jobStore.type"] = "Quartz.Simpl.RAMJobStore, Quartz";
 
-                        //properties["quartz.scheduler.exporter.type"] = "Quartz.Simpl.RemotingSchedulerExporter, Quartz";
+                        properties["quartz.scheduler.exporter.type"] = "Quartz.Simpl.RemotingSchedulerExporter, Quartz";
 
-                        //properties["quartz.scheduler.exporter.port"] = "555";
+                        properties["quartz.scheduler.exporter.port"] = "5555";
 
-                        //properties["quartz.scheduler.exporter.bindName"] = "QuartzScheduler";
+                        properties["quartz.scheduler.exporter.bindName"] = "QuartzScheduler";
 
-                        //properties["quartz.scheduler.exporter.channelType"] = scheme;
+                        properties["quartz.scheduler.exporter.channelType"] = scheme;
 
-                        //ISchedulerFactory factory = new StdSchedulerFactory(properties);
+                        ISchedulerFactory factory = new StdSchedulerFactory(properties);
 
-                        //scheduler = factory.GetScheduler();
+                        scheduler = factory.GetScheduler();
                         #endregion
 
 
                         // 配置文件的方式，配置quartz实例
-                        ISchedulerFactory schedulerFactory = new StdSchedulerFactory();
-                        scheduler = schedulerFactory.GetScheduler();
+                        //ISchedulerFactory schedulerFactory = new StdSchedulerFactory();
+                        //scheduler = schedulerFactory.GetScheduler();
 
                         LogHelper.LogHelper.CreateInstance().Info("任务调度初始化成功！");
                     }
@@ -152,7 +152,7 @@ namespace MS.Common.TaskHelper
             }
             catch (Exception ex)
             {
-                LogHelper.LogHelper.CreateInstance().Error("初始化远程任务管理器失败" + ex.StackTrace);
+                LogHelper.LogHelper.CreateInstance().Error("初始化远程任务管理器失败",ex);
             }
         }
 

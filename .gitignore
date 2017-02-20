@@ -4,3 +4,15 @@
 /TaskProcess.MS.Model/bin
 /TaskProcess.MS.UI/obj
 /TaskProcess.MS.UI/bin
+/MS.TaskProcess.BLL/obj
+/MS.TaskProcess.BLL/bin
+/MS.TaskProcess.DAL/bin
+/MS.TaskProcess.DAL/obj
+/MS.TaskProcess.Model/bin
+/MS.TaskProcess.Model/obj
+/TaskService/MS.TaskProcess.TaskService/obj
+/TaskService/MS.TaskProcess.TaskService/bin
+/TaskService/MS.TaskProcess.TaskService.Jobs/obj
+/TaskService/MS.TaskProcess.TaskService.Jobs/bin
+/WebUI/MS.TaskProcess.WebUI/obj
+/WebUI/MS.TaskProcess.WebUI/bin
