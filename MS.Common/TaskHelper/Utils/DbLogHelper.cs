@@ -21,7 +21,7 @@
         public static void WriteRunInfo(string taskName, string taskId, string result)
         {
             // 1. 记录文本日志
-            LogHelper.CreateInstance().Info(String.Format("任务 {0} {1} {2}", taskName, taskId, result));
+            LogHelper.CreateInstance.Info(String.Format("任务 {0} {1} {2}", taskName, taskId, result));
 
             //if (SysConfig.StorageMode == 1)
             //{
@@ -38,7 +38,7 @@
         public static void WriteErrorInfo(Exception ex)
         {
             // 1. 记录文本日志
-            LogHelper.CreateInstance().Error("任务执行失败.", ex);
+            LogHelper.CreateInstance.Error("任务执行失败.", ex);
 
             //if (SysConfig.StorageMode == 1)
             //{

@@ -53,7 +53,7 @@ namespace MS.Common
                 {
                     if (!Debugger.IsAttached)
                     {
-                        LogHelper.LogHelper.CreateInstance().Warn("性能问题(" + traceName + ")" + stopwatch.Elapsed.TotalMilliseconds + "ms");
+                        LogHelper.LogHelper.CreateInstance.Warn("性能问题(" + traceName + ")" + stopwatch.Elapsed.TotalMilliseconds + "ms");
                     }
 
                     Debug.WriteLine("性能问题({0})，耗时{1}毫秒。", traceName, stopwatch.Elapsed.TotalMilliseconds);
@@ -98,7 +98,7 @@ namespace MS.Common
                     {
                         if (!Debugger.IsAttached)
                         {
-                            LogHelper.LogHelper.CreateInstance().Warn("性能问题(" + traceName + ")" + stopwatch.Elapsed.TotalMilliseconds + "ms");
+                            LogHelper.LogHelper.CreateInstance.Warn("性能问题(" + traceName + ")" + stopwatch.Elapsed.TotalMilliseconds + "ms");
                         }
 
                         Debug.WriteLine("性能问题({0})，耗时{1}毫秒。", traceName, stopwatch.Elapsed.TotalMilliseconds);
@@ -112,7 +112,7 @@ namespace MS.Common
                     }
 
                     //LogHelper.HandleError(ex, traceName ?? ex.Message);
-                    LogHelper.LogHelper.CreateInstance().Error(ex.Message, ex);
+                    LogHelper.LogHelper.CreateInstance.Error(ex.Message, ex);
                 }
             }
             else
@@ -128,7 +128,7 @@ namespace MS.Common
                         throw;
                     }
 
-                    LogHelper.LogHelper.CreateInstance().Error(ex.Message, ex);
+                    LogHelper.LogHelper.CreateInstance.Error(ex.Message, ex);
                 }
             }
         }
@@ -161,7 +161,7 @@ namespace MS.Common
                     {
                         if (!Debugger.IsAttached)
                         {
-                            LogHelper.LogHelper.CreateInstance().Warn("性能问题(" + traceName + ")" + stopwatch.Elapsed.TotalMilliseconds + "ms");
+                            LogHelper.LogHelper.CreateInstance.Warn("性能问题(" + traceName + ")" + stopwatch.Elapsed.TotalMilliseconds + "ms");
                         }
 
                         Debug.WriteLine("性能问题({0})，耗时{1}毫秒。", traceName, stopwatch.Elapsed.TotalMilliseconds);
@@ -203,7 +203,7 @@ namespace MS.Common
                     {
                         if (!Debugger.IsAttached)
                         {
-                            LogHelper.LogHelper.CreateInstance().Warn("性能问题(" + traceName + ")" + stopwatch.Elapsed.TotalMilliseconds + "ms");
+                            LogHelper.LogHelper.CreateInstance.Warn("性能问题(" + traceName + ")" + stopwatch.Elapsed.TotalMilliseconds + "ms");
                         }
 
                         Debug.WriteLine("性能问题({0})，耗时{1}毫秒。", traceName, stopwatch.Elapsed.TotalMilliseconds);

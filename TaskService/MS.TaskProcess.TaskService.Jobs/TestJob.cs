@@ -26,12 +26,12 @@ namespace MS.TaskProcess.TaskService.Jobs
                 {
                     // 3. 开始执行相关任务
                     var tastName = "TestJob " + context.Trigger.Description;
-                    LogHelper.CreateInstance().Info(tastName + ",任务发生的当前系统时间:" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
+                    LogHelper.CreateInstance.Info(tastName + ",任务发生的当前系统时间:" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
                     //Thread.Sleep(9000);
                 }
                 catch (Exception ex)
                 {
-                    LogHelper.CreateInstance().Error(context.Trigger.Description, ex);
+                    LogHelper.CreateInstance.Error(context.Trigger.Description, ex);
                 }
 
             });

@@ -80,13 +80,13 @@ namespace MS.Common.TaskHelper
                         //ISchedulerFactory schedulerFactory = new StdSchedulerFactory();
                         //scheduler = schedulerFactory.GetScheduler();
 
-                        LogHelper.LogHelper.CreateInstance().Info("任务调度初始化成功！");
+                        LogHelper.LogHelper.CreateInstance.Info("任务调度初始化成功！");
                     }
                 }
             }
             catch (Exception ex)
             {
-                LogHelper.LogHelper.CreateInstance().Error("任务调度初始化失败！", ex);
+                LogHelper.LogHelper.CreateInstance.Error("任务调度初始化失败！", ex);
             }
         }
 
@@ -117,16 +117,16 @@ namespace MS.Common.TaskHelper
                             }
                             catch (Exception e)
                             {
-                                LogHelper.LogHelper.CreateInstance().Error(string.Format("任务“{0}”启动失败！", taskUtil.TaskName), e);
+                                LogHelper.LogHelper.CreateInstance.Error(string.Format("任务“{0}”启动失败！", taskUtil.TaskName), e);
                             }
                         }
                     }
-                    LogHelper.LogHelper.CreateInstance().Info("任务调度启动成功！");
+                    LogHelper.LogHelper.CreateInstance.Info("任务调度启动成功！");
                 }
             }
             catch (Exception ex)
             {
-                LogHelper.LogHelper.CreateInstance().Error("任务调度启动失败！", ex);
+                LogHelper.LogHelper.CreateInstance.Error("任务调度启动失败！", ex);
             }
         }
 
@@ -152,7 +152,7 @@ namespace MS.Common.TaskHelper
             }
             catch (Exception ex)
             {
-                LogHelper.LogHelper.CreateInstance().Error("初始化远程任务管理器失败",ex);
+                LogHelper.LogHelper.CreateInstance.Error("初始化远程任务管理器失败",ex);
             }
         }
 
@@ -169,7 +169,7 @@ namespace MS.Common.TaskHelper
                 {
                     //任务已经存在则删除
                     scheduler.DeleteJob(jk);
-                    LogHelper.LogHelper.CreateInstance().Info(string.Format("任务“{0}”已经删除", JobKey));
+                    LogHelper.LogHelper.CreateInstance.Info(string.Format("任务“{0}”已经删除", JobKey));
                 }
             }
             catch (Exception ex)
@@ -210,11 +210,11 @@ namespace MS.Common.TaskHelper
                 }
                 else
                 {
-                    LogHelper.LogHelper.CreateInstance().Info(string.Format("任务“{0}”启动成功,未来5次运行时间如下:", task.TaskName));
+                    LogHelper.LogHelper.CreateInstance.Info(string.Format("任务“{0}”启动成功,未来5次运行时间如下:", task.TaskName));
                     List<DateTime> list = GetNextFireTime(task.CronExpressionString, 5);
                     foreach (var time in list)
                     {
-                        LogHelper.LogHelper.CreateInstance().Info(time.ToString());
+                        LogHelper.LogHelper.CreateInstance.Info(time.ToString());
                     }
                 }
             }
@@ -237,7 +237,7 @@ namespace MS.Common.TaskHelper
                 {
                     //任务已经存在则暂停任务
                     scheduler.PauseJob(jk);
-                    LogHelper.LogHelper.CreateInstance().Info(string.Format("任务“{0}”已经暂停", JobKey));
+                    LogHelper.LogHelper.CreateInstance.Info(string.Format("任务“{0}”已经暂停", JobKey));
                 }
             }
             catch (Exception ex)
@@ -259,12 +259,12 @@ namespace MS.Common.TaskHelper
                 {
                     //任务已经存在则暂停任务
                     scheduler.ResumeJob(jk);
-                    LogHelper.LogHelper.CreateInstance().Info(string.Format("任务“{0}”恢复运行", JobKey));
+                    LogHelper.LogHelper.CreateInstance.Info(string.Format("任务“{0}”恢复运行", JobKey));
                 }
             }
             catch (Exception ex)
             {
-                LogHelper.LogHelper.CreateInstance().Error("恢复任务失败！", ex);
+                LogHelper.LogHelper.CreateInstance.Error("恢复任务失败！", ex);
             }
         }
 
@@ -304,12 +304,12 @@ namespace MS.Common.TaskHelper
                 {
                     //等待任务运行完成
                     scheduler.Shutdown(true);
-                    LogHelper.LogHelper.CreateInstance().Info("任务调度停止！");
+                    LogHelper.LogHelper.CreateInstance.Info("任务调度停止！");
                 }
             }
             catch (Exception ex)
             {
-                LogHelper.LogHelper.CreateInstance().Error("任务调度停止失败！", ex);
+                LogHelper.LogHelper.CreateInstance.Error("任务调度停止失败！", ex);
             }
         }
 
