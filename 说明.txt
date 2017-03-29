@@ -1,4 +1,6 @@
 
 
 1.TaskProces项目是利用Quartz.net 和 TopShelf 实现定时运行计划任务；
-2.计划任务可以通过Web界面进行调度
+2.计划任务可以通过Web界面进行调度 
+
+dev
